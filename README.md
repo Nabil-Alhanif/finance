@@ -1,7 +1,9 @@
-# Vue 3 + Vite
+# Financial tracking app
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Welp I'm just trying to create something to help me track my finances while also learning vuejs
 
-## Recommended IDE Setup
+## Phases
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [ ] Phase 1: Base vite app with deployment to github pages
+- [ ] Phase 2: Working authentication system
+- [ ] Phase 3: Home page UI design
