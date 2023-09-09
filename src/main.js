@@ -1,9 +1,16 @@
 import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+
+// Styling
 import './style.css';
 import './style.scss';
+import * as bootstrap from 'bootstrap';
+
 import router from './router';
 import App from './App.vue';
-import { initializeApp } from 'firebase/app'
+
+// Firebase
+import { initializeApp } from 'firebase/app';
 import { getAuth, connectAuthEmulator } from 'firebase/auth';
 
 /* code from our Firebase console */
@@ -20,13 +27,11 @@ const firebaseConfig = {
 // Initialize Firebase
 initializeApp(firebaseConfig)
 
-if (location.hostname === "localhost") {
-  connectAuthEmulator(getAuth(), "http://localhost:9099");
-}
+const app = createApp(App);
+const pinia = createPinia();
 
-const app = createApp(App)
+app.use(router);
+app.use(pinia);
 
-app.use(router)
-
-app.mount('#app')
+app.mount('#app');
 
