@@ -7,6 +7,9 @@
 	<header id="header" class="header fixed-top">
 		<NavBar />
 	</header>
+	<div>
+		<router-view />
+	</div>
 </template>
 
 <style scoped>

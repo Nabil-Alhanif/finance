@@ -1,9 +1,11 @@
 <script setup>
 	import { getAuth, signOut } from 'firebase/auth';
+	import { useRouter } from 'vue-router';
 
 	import useUserStore from '../stores/user.js';
 
 	const user = useUserStore();
+	const router = useRouter();
 
 	const handleSignOut = () => {
 		signOut(getAuth()).then(() => {
